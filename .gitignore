@@ -3,3 +3,7 @@ Church.DataLayer/obj/
 Church.Web/Areas/
 Church.Web/bin/
 Church.Web/obj/
+.vs/church/v16/
+study/
+WebService/
+WebServiceClient/

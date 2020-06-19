@@ -8,6 +8,6 @@ cd /d "%path%"
 
 echo running roundhouse
 SET sqlfilesdirectory="%DIR%"
-SET constring="Database=%dbname%;Data Source=%server%;User Id=%user%;Password=%password%;Convert Zero Datetime=True;Allow Zero Datetime=True;"
+SET constring="initial catalog=%dbname%;Data Source=DESKTOP-8D69L64;integrated security=True;"
 echo "%DIR%rh.exe"
-"%DIR%rh.exe" /d=%dbname% /f=%sqlfilesdirectory% /cs=%constring% /dt=MySQL /silent
+"%DIR%rh.exe" /d=%dbname% /f=%sqlfilesdirectory% /cs=%constring% /dt=SQLServer /silent

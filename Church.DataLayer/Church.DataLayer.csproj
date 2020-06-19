@@ -55,18 +55,44 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.Caching.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Interception.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Interception.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.20\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data.Entity.EF6, Version=6.10.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.Entity.6.10.9\lib\net452\MySql.Data.Entity.EF6.dll</HintPath>
-    </Reference>
     <Reference Include="MySql.Data.EntityFramework, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.EntityFramework.8.0.20\lib\net452\MySql.Data.EntityFramework.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.20\Assemblies\v4.5.2\MySql.Data.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
       <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\Lib\StructureMap2.6.1\deploy\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -93,65 +119,146 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.8.0.20\lib\net452\Ubiety.Dns.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.8.0.20\lib\net452\Zstandard.Net.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Db\Entity\DbEntityModel.Context.cs">
+    <Compile Include="Db\Entity\Department.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Entity\Employee.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Entity\EntityModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DbEntityModel.Context.tt</DependentUpon>
+      <DependentUpon>EntityModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Db\Entity\DbEntityModel.cs">
+    <Compile Include="Db\Entity\EntityModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DbEntityModel.tt</DependentUpon>
+      <DependentUpon>EntityModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Db\Entity\DbEntityModel.Designer.cs">
+    <Compile Include="Db\Entity\EntityModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DbEntityModel.edmx</DependentUpon>
+      <DependentUpon>EntityModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Db\Model\User.cs" />
+    <Compile Include="Db\Entity\Gender.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Entity\ManagementModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManagementModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Entity\ManagementModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Entity\ManagementModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManagementModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Entity\Pastor.cs">
+      <DependentUpon>ManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Entity\Staff.cs">
+      <DependentUpon>ManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Entity\User.cs">
+      <DependentUpon>ManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Db\Entity\UserPrivilege.cs">
+      <DependentUpon>ManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IOC\CoreConfigurator.cs" />
+    <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\DepartmentEmployees.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\EmployeeContext.cs" />
+    <Compile Include="Models\Gender.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\Pastor.cs" />
+    <Compile Include="Models\Staff.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\Concrete\DepartmentRepository.cs" />
+    <Compile Include="Repositories\Concrete\EmployeeRepository.cs" />
+    <Compile Include="Repositories\Concrete\GenderRepository.cs" />
+    <Compile Include="Repositories\Concrete\PastorRepository.cs" />
+    <Compile Include="Repositories\Concrete\StaffRepository.cs" />
+    <Compile Include="Repositories\Concrete\UserRepository.cs" />
+    <Compile Include="Repositories\IEmployeeRepository.cs" />
+    <Compile Include="Repositories\IDepartmentRepository.cs" />
+    <Compile Include="Repositories\IGenderRepository.cs" />
+    <Compile Include="Repositories\IPastorRepository.cs" />
+    <Compile Include="Repositories\IStaffRepository.cs" />
+    <Compile Include="Repositories\IUserRepository.cs" />
+    <Compile Include="Service\Concrete\LoggedUserService.cs" />
+    <Compile Include="Service\Concrete\LoginService.cs" />
+    <Compile Include="Service\Concrete\PastorService.cs" />
+    <Compile Include="Service\Concrete\StaffService.cs" />
+    <Compile Include="Service\ILoggedUserService.cs" />
+    <Compile Include="Service\ILoginService.cs" />
+    <Compile Include="Service\IPastorService.cs" />
+    <Compile Include="Service\IStaffService.cs" />
+    <Compile Include="UserLoginStatus.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="App.config" />
-    <EntityDeploy Include="Db\Entity\DbEntityModel.edmx">
+    <EntityDeploy Include="Db\Entity\EntityModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DbEntityModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>EntityModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Db\Entity\DbEntityModel.edmx.diagram">
-      <DependentUpon>DbEntityModel.edmx</DependentUpon>
+    <None Include="App.config" />
+    <None Include="Db\Entity\EntityModel.edmx.diagram">
+      <DependentUpon>EntityModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="Db\Entity\ManagementModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ManagementModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Db\Entity\ManagementModel.edmx.diagram">
+      <DependentUpon>ManagementModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Db\Entity\DbEntityModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DbEntityModel.edmx</DependentUpon>
-      <LastGenOutput>DbEntityModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Db\Entity\DbEntityModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DbEntityModel.edmx</DependentUpon>
-      <LastGenOutput>DbEntityModel.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Folder Include="Db\Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Db\Entity\EntityModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityModel.edmx</DependentUpon>
+      <LastGenOutput>EntityModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Db\Entity\EntityModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityModel.edmx</DependentUpon>
+      <LastGenOutput>EntityModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Db\Entity\ManagementModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ManagementModel.edmx</DependentUpon>
+      <LastGenOutput>ManagementModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Db\Entity\ManagementModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ManagementModel.edmx</DependentUpon>
+      <LastGenOutput>ManagementModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

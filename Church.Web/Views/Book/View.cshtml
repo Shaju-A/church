@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Book View</title>
+</head>
+<body>
+    <div>
+        Display data of @ViewBag.Id
+    </div>
+    <br />
+    <div>
+        Available books are
+        <ul>
+            @{
+                foreach (var book in ViewBag.BookList)
+                {
+                    <li> @book.Id -  @book.Name </li>
+                }
+            }
+        </ul>
+    </div>
+</body>
+</html>
