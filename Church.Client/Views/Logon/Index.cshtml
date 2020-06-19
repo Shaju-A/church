@@ -1,0 +1,77 @@
+﻿@model Church.DataLayer.Models.LoginModel
+
+@{
+    Layout = null;
+    ViewBag.Title = "Login";
+
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+<div class="container col-lg-5 h-100 justify-content-center">
+    @using (Html.BeginForm("Login", "Logon", FormMethod.Post, new { id = "frmlogin", @class = "border border-light p-2" }))
+    {
+        @Html.AntiForgeryToken()
+        <section class="card border-secondary mb-3">
+            <div class="card-header alert alert-success white-text text-center py-4">
+                <p class="h-25">User Login</p>
+            </div>
+            <div class="card-body">
+                @Html.Hidden("returnUrl", (string)ViewBag.ReturnUrl)
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    <div class="form-row">
+                        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-row">
+                        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-10">
+                            @Html.ValidationMessageFor(model => model.Invalid, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer alert alert-success" style="margin-bottom: 0">
+                <input type="submit" value="Login" class="btn btn-outline-success float-md-right" />
+                @*<div class="form-group">
+                        <div class="col-md-10 ">
+                        </div>
+                    </div>*@
+            </div>
+        </section>
+    }
+
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<script>
+    $(function () {
+        setTimeout(function () { $('.validation-summary-errors').fadeOut(); }, 2000);
+    })
+</script>

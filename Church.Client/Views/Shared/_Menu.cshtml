@@ -1,0 +1,106 @@
+﻿
+<header class="header white-bg">
+    <div class="sidebar-toggle-box">
+        <i class="fa fa-bars"></i>
+    </div>
+    <!--logo start-->
+    <a href="@Url.Action("Index", "Home")" class="logo">Manage<span>ment</span></a>
+    <!--logo end-->
+    <div class="nav notify-row" id="top_menu">
+    </div>
+    <div class="top-nav ">
+        <!--search & user info start-->
+        <ul class="nav pull-right top-menu">
+            <!-- user login dropdown start-->
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                    @*<img alt="" src='<%= string.Format("{0}/{1}", webServerRootUrl, "img/avatar1_small.png") %>'>*@
+                    <span class="username">@User.Identity.Name</span>
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu extended logout dropdown-menu-right">
+                    <div class="log-arrow-up"></div>
+                    <li>
+                        @Html.ActionLink("Logout", "Logout", "Logon")
+                    </li>
+
+                </ul>
+            </li>
+            <!-- user login dropdown end -->
+        </ul>
+        <!--search & user info end-->
+    </div>
+</header>
+<aside>
+    <div id="sidebar" class="nav-collapse ">
+        <ul class="sidebar-menu" id="nav-accordion">
+            <li>
+                <a href="@Url.Action("Dashboard", "Home")">
+                    <i class="fa fa-dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="sub-menu dcjq-parent-li">
+                <a href="javascript:;" class="dcjq-parent">
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                    <span>Master</span>
+                    <span class="dcjq-icon"></span>
+                </a>
+                <ul class="sub" style="display: none;">
+                    <li>@Html.ActionLink("Staff", "StaffList", "Staff")</li>
+                    <li>@Html.ActionLink("Pastor", "Index", "Pastor")</li>
+                </ul>
+            </li>
+            <li class="sub-menu dcjq-parent-li">
+                <a href="javascript:;" class="dcjq-parent">
+                    <i class="fa fa-tasks"></i>
+                    <span>Transaction</span>
+                    <span class="dcjq-icon"></span>
+                </a>
+                <ul class="sub" style="display: none;">
+                    <li class="sub-menu dcjq-parent-li">
+                        <a href="javascript:;" class="dcjq-parent">
+                            <span>Sales</span>
+                            <span class="dcjq-icon"></span>
+                        </a>
+                        <ul class="sub" style="display: none;">
+                            <li><a href="#">Sale</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu dcjq-parent-li">
+                        <a href="javascript:;" class="dcjq-parent">
+                            <span>Purchase</span>
+                            <span class="dcjq-icon"></span>
+                        </a>
+                        <ul class="sub" style="display: none;">
+                            <li><a href="#">Purchase</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu dcjq-parent-li">
+                        <a href="javascript:;" class="dcjq-parent">
+                            <i class="fa fa-server" aria-hidden="true"></i>
+                            <span>Report</span>
+                            <span class="dcjq-icon"></span>
+                        </a>
+                        <ul class="sub" style="display: none;">
+                            <li><a href="#">Stock</a></li>
+                            <li><a href="#">Sale</a></li>
+                            <li><a href="#">Purchase</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="sub-menu dcjq-parent-li">
+                <a href="javascript:;" class="dcjq-parent">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <span>User Management</span>
+                    <span class="dcjq-icon"></span>
+                </a>
+                <ul class="sub" style="display: none;">
+                    <li><a href="#">Create</a></li>
+                    <li><a href="#">Permission</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</aside>

@@ -10,6 +10,12 @@ namespace Church.Web
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
+            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
+                        "~/Scripts/jquery.validate.js",
+                        "~/Scripts/jquery.validate.unobtrusive.js"));
+            //, "~/Scripts/jquery.validate.unobtrusive.min.js"
+            bundles.Add(new ScriptBundle("~/bundles/datatable").Include(
+                        "~/Scripts/DataTables/jquery.dataTables.min.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
@@ -20,7 +26,9 @@ namespace Church.Web
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/datatable/dataTable.bootstrap.min.css",
+                      "~/Content/datatable/common.css",
                       "~/Content/site.css"));
         }
     }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c6d701022dce462f83cc1c77db954bc8" Name="Diagram1" ShowGrid="false" DisplayType="false">
+        <EntityTypeShape EntityType="ManagementModel.User" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ManagementModel.UserPrivilege" Width="1.5" PointX="3" PointY="1.75" />
+        <AssociationConnector Association="ManagementModel.FK_tblUserPrivileges_tblUsers" />
+        <EntityTypeShape EntityType="ManagementModel.Staff" Width="1.5" PointX="3" PointY="6.5" />
+        <AssociationConnector Association="ManagementModel.FK_tblStaff_tblUsers" />
+        <EntityTypeShape EntityType="ManagementModel.Pastor" Width="1.5" PointX="3" PointY="11" />
+        <AssociationConnector Association="ManagementModel.FK_tblPastors_tblUsers" />
+        <AssociationConnector Association="ManagementModel.FK_tblPastors_tblUsersUpdatedBy" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
